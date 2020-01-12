@@ -1,5 +1,6 @@
 
-# Image loader app built with LAMP stack in docker-compose.yml
+# brief delivery system process built with LAMP stack in docker-compose.yml
+# based on factory method of GOF
 
 This is a basic LAMP stack environment built using Docker Compose. It consists following:
 
