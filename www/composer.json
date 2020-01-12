@@ -1,0 +1,17 @@
+{
+    "name": "toxab/cds",
+    "authors": [
+        {
+            "name": "toxab",
+            "email": "tohub888@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": ">=6.0 <7.0.0"
+    }
+}
