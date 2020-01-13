@@ -11,9 +11,7 @@ class AirProduct implements Product
     public function request($method, $uri, $parameters, $body, $responseClass = null, $format = 'json'): array
     {
         /**
-         * in case $responseClass have instance of some class then
-         * will invoke class
-         *
+         * some logic example
          *
         if (!empty($body)) {
         $options[$format] = $body;
