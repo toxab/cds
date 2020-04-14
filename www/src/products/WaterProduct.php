@@ -4,40 +4,24 @@ namespace App\products;
 
 use App\interfaces\Product;
 use App\storage\WaterApi;
-use GuzzleHttp\Client;
 
+/**
+ * Class WaterProduct
+ * @package App\products
+ */
 class WaterProduct implements Product
 {
-    
-    public function request($method, $uri, $parameters, $body, $responseClass = null, $format = 'json'): array
+    /**
+     * @param string      $method
+     * @param string      $uri
+     * @param array       $parameters
+     * @param array       $body
+     * @param string|null $responseClass
+     * @param string      $format
+     * @return array
+     */
+    public function request(string $method, string $uri, array $parameters, array $body, string $responseClass = null, $format = 'json'): array
     {
-        /**
-         * some logic example
-         *
-        if (!empty($body)) {
-        $options[$format] = $body;
-        }
-        $query = http_build_query($parameters);
-        $requestUri = $uri;
-        if (strlen(trim($query)) !==  '') {
-        $requestUri .='?' . $query;
-        }
-
-        $client = new Client();
-
-        $result = $client->request($method, $requestUri, $options);
-        $responseData = $result->getBody()->getContents();
-
-        $response = $this->container->get($responseClass);
-
-        $response->handle($responseData);
-
-         .....................................................etc
-         
-        return $response;
- 
-         */
-        
         return WaterApi::response();
     }
 }

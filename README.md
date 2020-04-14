@@ -1,7 +1,6 @@
 
-# brief delivery system process built with LAMP stack in docker-compose.yml
-# based on factory method of GOF
-
+# brief delivery system process built with LAMP stack and docker
+# based on factory method of GOF story ;)
 This is a basic LAMP stack environment built using Docker Compose. It consists following:
 
 * PHP 7.2
@@ -23,6 +22,6 @@ Your LAMP stack is now ready!! You can access it via `http://localhost`.
 
 phpMyAdmin is configured to run on port 8080. Use following default credentials.
 
-http://localhost:8080/  
+`http://localhost:8080/`  
 username: root  
 password: root

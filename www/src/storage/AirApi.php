@@ -2,8 +2,6 @@
 
 namespace App\storage;
 
-use App\interfaces\Product;
-
 class AirApi extends Api
 {
     /**
@@ -11,17 +9,12 @@ class AirApi extends Api
      */
     public static function response(): array
     {
-        $numbers = [
-            'a' => 8888,
-            'b' => 1245,
-            'c' => 1112,
-            'd' => 4567
-        ];
-        sort($numbers);
         return [
-            'message' => 'AirDelivery response api pending',
-            'status' => 'Pending',
-            'price' => $numbers
+            'message' => 'AirDelivery response api success',
+            'status' => 'delivered',
+            'price' => [
+                1, 2, 3, 4, 5
+            ]
         ];
     }
 }

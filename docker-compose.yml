@@ -17,7 +17,7 @@ services:
       - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
     environment:
-      XDEBUG_CONFIG: "remote_host=localhost remote_enable=1"
+      XDEBUG_CONFIG: "remote_host=172.17.0.1 remote_enable=1"
       PHP_IDE_CONFIG: "serverName=Docker"
   mysql:
     build: ./bin/mysql
